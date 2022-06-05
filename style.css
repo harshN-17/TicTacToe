@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(31, 26, 26);
+    color: whitesmoke ;
+    user-select: none;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.title-bar{
+    position: relative;
+}
+
+#title{
+    font-size: 1.8em;
+    cursor: pointer;
+    /* margin-right: 10px; */
+
+}
+
+#title:hover{
+    opacity: 0.8;
+}
+
+#title:active{
+    font-size: 1.73em;
+}
+
+#i-btn{
+    cursor: pointer;
+    display: inline-flex;
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    border: 2px solid;
+    border-radius: 50%;
+    justify-content: center ;
+    align-items:center ;
+    position: absolute;
+    right: -4vw;
+}
+
+#i-btn:hover{
+    background-color: whitesmoke;
+    color: rgb(31, 26, 26);
+    font-weight: bold;
+    transition: all 450ms;
+}
+
+#i-btn:active{
+    opacity: 0.3;
+}
+
+.info{
+    display: none;
+}
+
+.active{
+    height: 20vh;
+    width: 26vw;
+    background-color: rgb(92, 45, 45);
+    z-index: 2;
+    position: absolute;
+    top: 6vh;
+    left: 52vh;
+    transform: translatex(-50%,-50%), scale(1);
+    transition: all 400ms;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 10px 10px 35px rgb(79, 68, 68);
+    /* display: none; */
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.game-container{
+    display: grid;
+    grid-template-columns: repeat(3, 12vh);
+    grid-template-rows: repeat(3, 12vh);
+    margin: 4em;    
+}
+
+.box{
+    border: 2px whitesmoke solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    transition: all 430ms;
+}
+
+.box:hover{
+    background-color: rgb(71, 53, 53);
+    cursor: pointer;
+}
+
+.box:active{
+    opacity: 0.3;
+}
+
+.game-info{
+    font-size: 20px;
+}
+
+.game-info table{
+    border-spacing: 15px;
+}
+
+table tr td{
+    text-align: center;
+}
+
+.bl{
+    border-left: none;
+}
+.br{
+    border-right: none;
+}
+.bu{
+    border-top: none;
+}
+.bd{
+    border-bottom: none;
+}
+
+input{
+    border: none;
+    color: whitesmoke;
+    outline: none;
+    background-color: rgb(31, 26, 26);
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Fira Sans', sans-serif;
+}

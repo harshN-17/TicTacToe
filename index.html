@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>TicTacToe</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title-bar">
+            <span id="title">Two Player Tic Tac Toe</span>
+            <span id="i-btn">i</span> 
+            <div class="info">
+                <ul>
+                    <li>Tap on the player name to change it</li>
+                    <li>Double-click the title to reset the game</li>
+                    <li>Double-click a cell to undo the move</li>
+                    <li>Refresh the page to renew the stats</li>
+                </ul>
+            </div>
+        </div>
+            
+        <div class="game-container">
+            <span class="box bl bu"></span>
+            <span class="box bu"></span>
+            <span class="box bu br"></span>
+            <span class="box bl"></span>
+            <span class="box"></span>
+            <span class="box br"></span>
+            <span class="box bl bd"></span>
+            <span class="box bd"></span>
+            <span class="box bd br"></span>
+        </div>
+
+        <div class="game-info">
+            <table>
+                <tr>
+                    <td><input type="text" name="Player1" id="p1" value="Player X"></td>
+                    <td>Tie</td>
+                    <td><input type="text" name="Player2" id="p2" value="Player 0"></td>
+                </tr>
+                <tr>
+                    <td id="score1">0</td>
+                    <td id="tie">0</td>
+                    <td id="score2">0</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
